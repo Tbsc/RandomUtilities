@@ -1,0 +1,16 @@
+[
+{
+  "modid": "RandomUtilities",
+  "name": "Random Utilities",
+  "description": "Some random stuff that I need!",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Tbsc"],
+  "credits": "Tbsc",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
