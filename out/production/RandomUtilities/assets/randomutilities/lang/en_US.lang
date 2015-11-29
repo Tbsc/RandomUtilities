@@ -1,0 +1,15 @@
+### Items ###
+
+# Food
+item.RandomUtilities:foodPancake.name=Pancake
+
+# Mystical Food
+item.RandomUtilities:foodMysticalPineapple.name=Mystical Pineapple
+item.RandomUtilities:foodMysticalApple.name=Mystical Apple
+item.RandomUtilities:foodMysticalPear.name=Mystical Pear
+item.RandomUtilities:foodMysticalPoop.name=Mystical Poop
+item.RandomUtilities:foodMysticalMango.name=Mystical Mango
+item.RandomUtilities:foodMysticalBanana.name=Mystical Banana
+
+item.RandomUtilities:itemChattier.name=Chattier
+item.RandomUtilities:itemCreativeFlightRing.name=Flight Ring

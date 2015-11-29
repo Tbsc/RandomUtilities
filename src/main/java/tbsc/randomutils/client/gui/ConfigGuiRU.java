@@ -5,7 +5,7 @@ import net.minecraft.client.gui.GuiScreen;
 import net.minecraftforge.common.config.ConfigElement;
 import net.minecraftforge.common.config.Configuration;
 import tbsc.randomutils.RandomUtilities;
-import tbsc.randomutils.reference.Reference;
+import tbsc.randomutils.common.reference.Reference;
 
 /**
  * @author Tbsc on 29/10/2015, 19:39

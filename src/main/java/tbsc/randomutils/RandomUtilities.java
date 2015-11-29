@@ -5,18 +5,17 @@ import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
-import cpw.mods.fml.common.network.NetworkRegistry;
-import cpw.mods.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.common.config.Property;
-import tbsc.randomutils.cmd.CommandRU;
-import tbsc.randomutils.init.ItemInit;
-import tbsc.randomutils.init.MiscInit;
-import tbsc.randomutils.init.RecipeInit;
-import tbsc.randomutils.proxy.IProxy;
-import tbsc.randomutils.reference.Reference;
+import tbsc.randomutils.common.cmd.CommandRU;
+import tbsc.randomutils.common.init.BlockInit;
+import tbsc.randomutils.common.init.ItemInit;
+import tbsc.randomutils.common.init.MiscInit;
+import tbsc.randomutils.common.init.RecipeInit;
+import tbsc.randomutils.common.proxy.IProxy;
+import tbsc.randomutils.common.reference.Reference;
 
 @Mod(modid = Reference.Mod.MODID, name = Reference.Mod.NAME, version = Reference.Mod.VERSION,
         guiFactory = Reference.Mod.GUI_FACTORY)
@@ -51,6 +50,7 @@ public class RandomUtilities {
 
         // Registration
         ItemInit.init();
+        BlockInit.init();
         RecipeInit.init();
         MiscInit.init();
         MiscInit.eventInit();
@@ -63,8 +63,9 @@ public class RandomUtilities {
             config.load();
 
             // Read props from config
-            Property kewlShenanigansProp = config.get(Configuration.CATEGORY_GENERAL, "kewlShenanigans", "true",
+            Property kewlShenanigansProp = config.get(Configuration.CATEGORY_GENERAL, "kewlShenanigans", "false",
                     "that's kewl m8");
+
             shouldKewlShenanigans = kewlShenanigansProp.getBoolean();
         } catch (Exception e) {
             // Exception
